@@ -1,41 +1,52 @@
 @import url(base.css);
 
-h1 {
-  font-size: 200%;
-  margin: 8px 0px;
+#movies {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-img {
-  border-radius: 12px;
-}
-
+/* Movie card */
 article {
-  background-color: lightgray;
-  border-radius: 16px;
-  padding: 16px;
-  margin: 2vw;
+  background-color: #2e2e2e;
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid #444;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.4);
+
+  width: 100%;
+  box-sizing: border-box;
 }
 
+/* Title */
+article h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Image */
+img {
+  border-radius: 10px;
+  max-width: 100%;
+  margin: 10px auto;
+  display: block;
+}
+
+/* Text */
+article p {
+  margin: 5px 0;
+}
+
+/* Genres */
 span {
-  margin-right: 4px;
+  margin-right: 6px;
 }
 
 .genre {
-  padding: 4px 8px;
-  border: solid black 1px;
-  border-radius: 6px;
-  background-color: darkgray;
-  font-weight: bold;
-}
-
-input {
-  width: 100%;
-}
-
-select {
-  width: 100%;
-}
-
-textarea {
-  width: 100%;
+  background-color: #5a5a5a;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  display: inline-block;
+  font-size: 0.9em;
 }
